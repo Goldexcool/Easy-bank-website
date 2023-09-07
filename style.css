@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+:root {
+    /* ### Primary */
+
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+
+    /* ### Neutral */
+
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Public Sans", sans-serif;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--LightGrayishBlue);
+    z-index: 999;
+
+}
+
+#navbar {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+#navbar img {
+    width: 160px;
+    height: 40px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.header__list ul {
+    display: flex;
+    column-gap: 2rem;
+    font-size: 14px;
+    color: var(--DarkBlue);
+}
+
+#navbar button {
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+    color: var(--DarkBlue);
+    border: none;
+    border-radius: 30px;
+}
+
+.dropmenuWrapper {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 170px;
+    width: 100%;
+}
+
+.dropmenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--VeryLightGray);
+    padding: 35px 120px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.dropmenu ul {
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.dropmenu.open{
+    visibility: visible;
+}
+
+.menu {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+}
+#first__section{
+    padding: 0 0 0 5rem;
+    /* margin-top: 2rem; */
+}
+.firstsec__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fs_content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    row-gap: .8rem;
+}
+.fs_content h1{
+    font-size: 40px;
+    color: var(--DarkBlue);
+    width: 350px;
+    font-weight: 300;
+
+}
+.fs_content h2{
+    font-size: 15px;
+    color: var(--DarkBlue);
+    width: 390px;
+}
+.fs_content p{
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+    color: var(--DarkBlue);
+    border: none;
+    border-radius: 30px;
+    color: var(--White);
+    text-align: center;
+    width: 200px;
+}
+
+.fs_image_wrapper{
+    background-image: url(./bg-intro-desktop.svg);
+    height: 500px;
+    width: 700px;
+    object-fit: contain;
+    background-position: left;
+    overflow: hidden;
+    z-index: -999;
+    position: relative;
+
+}
+.mockup_image img{
+    position: absolute;
+    max-width: 100%;
+    height: 100vh;
+    right: 0;
+    top: -50px;
+    z-index: -999;
+    object-fit: contain;
+}
+#second__section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0 5rem;
+    background-color: var(--LightGrayishBlue);
+}
+.section__wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    
+}
+.why_choose_content{
+    display: flex;
+    flex-direction: column;
+}
+.why_choose_content h1{
+    font-size: 30px;
+}
+.why_choose_content h2{
+    font-size: 14px;
+    width: 510px;
+}
+.flex_main_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    
+    /* justify-content: center; */
+    align-items: center;
+}
+.online__banking{
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
+   margin-top: 2rem;
+   flex-wrap: wrap;
+
+}
+.online__banking img{
+    width: 60px;
+    height: 60px;
+}
+.online__banking h1{
+    font-size: 20px;
+}
+.online__banking h2{
+    font-size: 12px;
+    width: 220px;
+}
+#third__section{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.third_section_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.third_section_wrapper_h1{
+    margin-bottom: 2rem;
+}
+.content_wrapper3{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+}
+.content_wrapper3 img{
+    width: 250px;
+    height: 160px;
+    border-radius: 10px 10px 0 0;
+}
+.wrapperr__{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    column-gap: .5rem;
+    flex-wrap: wrap;
+}
+._content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--LightGrayishBlue);
+    justify-content: center;
+    row-gap: 10px;
+}
+._content h1{
+    font-size: 10px;
+    font-weight: 200;
+}
+._content h2{
+    font-size: 15px;
+    font-weight: 600;
+    width: 200px;
+}
+._content h3{
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+}
+#footer{
+    display: flex;
+    padding: 30px;
+    /* justify-content: center; */
+    background-color: var(--DarkBlue);
+}
+.footer_wrapper{
+    max-width: 1200px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 7rem;
+}
+.flex_wrpper{
+  display: flex;
+  color: #FFF;
+  justify-content: center;
+  column-gap: 100px;
+
+}
+.logo_socialmedia{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    
+}
+.easybank_logo{
+    width: 160px;
+    height: 40px;
+    fill: #FFF;
+}
+.social_links{
+    display: flex;
+   
+
+}
+.social_links img{
+    width: 25px;
+    height: 25px;
+    
+}
+.About_us_list ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.careers_list ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.button_copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button_copyright p{
+    padding: 10px 15px;
+    background-image: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+    color: var(--DarkBlue);
+    border: none;
+    border-radius: 30px;
+    color: var(--White);
+    text-align: center;
+    width: 200px;
+    margin-bottom: 1rem;
+}
+.button_copyright h1{
+    font-size: 12px;
+    font-weight: 400;
+    width: 200px;
+    color: var(--GrayishBlue);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .header__list ul {
+        display: none;
+    }
+
+    button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu i {
+        display: inline-block;
+    }
+
+}
